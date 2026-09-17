@@ -348,7 +348,9 @@ _EXPORTS: dict[str, str] = {
     "load_extension_with_recovery": "ext.loader",
     # Normalization: RMSNorm / LayerNorm / GroupNorm and their fused epilogues
     "FLYDSL_NORM_MIN_ALIGNED_DIM": "norm.fused_residual_norm_flydsl",
+    "can_use_fused_scale_residual_norm_scale_shift_triton": "norm.scale_residual_norm_scale_shift_triton",
     "flydsl_fused_residual_norm_scale_shift": "norm.fused_residual_norm_flydsl",
+    "fused_scale_residual_norm_scale_shift_triton": "norm.scale_residual_norm_scale_shift_triton",
     "flydsl_norm_scale_shift": "norm.fused_residual_norm_flydsl",
     "apply_group_norm_silu": "norm.group_norm_silu",
     "triton_group_norm_silu": "norm.group_norm_silu_triton",
